@@ -6,7 +6,7 @@ function App(): JSX.Element {
     return (
         <div className='flex flex-col min-h-screen'>
             <NavbarApp />
-            <main className="flex-grow">
+            <main className="flex-grow pt-20">
                 <Hero />
                 <section id="about" className="min-h-screen">
                     <AboutUs />

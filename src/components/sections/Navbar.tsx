@@ -2,6 +2,8 @@
 import { Navbar } from "flowbite-react";
 import { useEffect, useState } from 'react';
 
+import Logo from "../../assets/images/logo/pcplanejados_logo.png";
+
 export function NavbarApp(): JSX.Element {
     const [activeSection, setActiveSection] = useState<string>('home');
 
@@ -32,10 +34,10 @@ export function NavbarApp(): JSX.Element {
     };
 
     return (
-        <Navbar className="h-20 pt-5 shadow-lg">
+        <Navbar className="h-20 pt-5 shadow-lg fixed top-0 w-full z-50">
             <img
                 className="mr-3 h-10 sm:h-12"
-                src="../../../public/assets/images/logo/pcplanejados_logo.png"
+                src={Logo}
                 alt="Paulo Costa Planejados"
             />
             <Navbar.Collapse>
