@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useAnimation } from "framer-motion";
 import { Clock, MapPin, Phone } from "lucide-react";
 import { type FC, useEffect } from "react";
@@ -78,10 +80,10 @@ export const Location: FC = () => {
                     <div className="space-y-8 max-w-lg">
                         <div className="text-center lg:text-left">
                             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                                Onde Estamos
+                                Venha nos conhecer
                             </h2>
                             <p className="text-xl text-gray-600">
-                                Venha conhecer nossa loja e realizar seu projeto
+                                Faça seu orçamento e realize seu projeto
                             </p>
                         </div>
 

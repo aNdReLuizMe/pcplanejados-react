@@ -36,7 +36,7 @@ export function NavbarApp(): JSX.Element {
     return (
         <Navbar className="h-20 pt-5 shadow-lg fixed top-0 w-full z-50">
             <img
-                className="mr-3 h-10 sm:h-12"
+                className="mr-3 h-10 sm:h-14"
                 src={Logo}
                 alt="Paulo Costa Planejados"
             />

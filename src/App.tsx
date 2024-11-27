@@ -1,4 +1,5 @@
 import { AboutUs } from './components/sections/AboutUs'
+import { Footer } from './components/sections/Footer'
 import { Hero } from './components/sections/Hero'
 import { Location } from './components/sections/Location'
 import { NavbarApp } from './components/sections/Navbar'
@@ -20,6 +21,7 @@ function App(): JSX.Element {
                     <Location />
                 </section>
             </main>
+            <Footer />
         </div>
     )
 }
