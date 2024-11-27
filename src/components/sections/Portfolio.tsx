@@ -35,7 +35,7 @@ export function Portfolio(): JSX.Element {
     ];
 
     return (
-        <section className="h-[calc(100vh-5rem)] bg-white py-16 flex flex-col items-center overflow-hidden">
+        <section className="min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)] bg-white py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">

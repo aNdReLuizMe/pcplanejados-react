@@ -48,7 +48,7 @@ export const Location: FC = () => {
     );
 
     return (
-        <section className="h-[calc(100vh-5rem)] bg-white">
+        <section className="min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)] bg-white">
             <motion.div
                 ref={ref}
                 initial="hidden"

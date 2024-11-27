@@ -34,54 +34,57 @@ export function NavbarApp(): JSX.Element {
     };
 
     return (
-        <Navbar className="h-20 pt-5 shadow-lg fixed top-0 w-full z-50">
-            <img
-                className="mr-3 h-10 sm:h-14"
-                src={Logo}
-                alt="Paulo Costa Planejados"
-            />
-            <Navbar.Collapse>
-                <Navbar.Link
-                    href="#home"
-                    active={activeSection === 'home'}
-                    onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                        e.preventDefault();
-                        scrollToSection('home');
-                    }}
-                >
-                    Home
-                </Navbar.Link>
-                <Navbar.Link
-                    href="#about"
-                    active={activeSection === 'about'}
-                    onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                        e.preventDefault();
-                        scrollToSection('about');
-                    }}
-                >
-                    Quem somos
-                </Navbar.Link>
-                <Navbar.Link
-                    href="#portfolio"
-                    active={activeSection === 'portfolio'}
-                    onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                        e.preventDefault();
-                        scrollToSection('portfolio');
-                    }}
-                >
-                    O que criamos
-                </Navbar.Link>
-                <Navbar.Link
-                    href="#location"
-                    active={activeSection === 'location'}
-                    onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                        e.preventDefault();
-                        scrollToSection('location');
-                    }}
-                >
-                    Onde estamos
-                </Navbar.Link>
-            </Navbar.Collapse>
+        <Navbar className="h-20 pt-5 shadow-lg fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm">
+            <div className="container mx-auto flex justify-between items-center">
+                <img
+                    className="h-10 sm:h-14"
+                    src={Logo}
+                    alt="Paulo Costa Planejados"
+                />
+                <Navbar.Toggle className="ml-3" />
+                <Navbar.Collapse className="md:flex">
+                    <Navbar.Link
+                        href="#home"
+                        active={activeSection === 'home'}
+                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                            e.preventDefault();
+                            scrollToSection('home');
+                        }}
+                    >
+                        Home
+                    </Navbar.Link>
+                    <Navbar.Link
+                        href="#about"
+                        active={activeSection === 'about'}
+                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                            e.preventDefault();
+                            scrollToSection('about');
+                        }}
+                    >
+                        Quem somos
+                    </Navbar.Link>
+                    <Navbar.Link
+                        href="#portfolio"
+                        active={activeSection === 'portfolio'}
+                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                            e.preventDefault();
+                            scrollToSection('portfolio');
+                        }}
+                    >
+                        O que criamos
+                    </Navbar.Link>
+                    <Navbar.Link
+                        href="#location"
+                        active={activeSection === 'location'}
+                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                            e.preventDefault();
+                            scrollToSection('location');
+                        }}
+                    >
+                        Onde estamos
+                    </Navbar.Link>
+                </Navbar.Collapse>
+            </div>
         </Navbar>
     );
 }

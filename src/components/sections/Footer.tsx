@@ -27,14 +27,11 @@ export const Footer: FC = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="h-20 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] bg-white dark:bg-gray-800 fixed bottom-0 w-full z-40">
-            <div className="h-full max-w-7xl mx-auto px-4 flex items-center justify-between">
-                {/* Copyright e informações */}
-                <div className="text-sm text-gray-500 dark:text-gray-400">
+        <footer className="h-20 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] bg-white/95 backdrop-blur-sm w-full z-40">
+            <div className="h-full container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between py-4 sm:py-0">
+                <div className="text-sm text-gray-500 text-center sm:text-left mb-2 sm:mb-0">
                     <p>&copy; {currentYear} Paulo Costa Planejados.</p>
                 </div>
-
-                {/* Redes Sociais */}
                 <div className="flex items-center space-x-6">
                     {socialLinks.map((social, index) => (
                         <a
@@ -43,7 +40,7 @@ export const Footer: FC = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label={social.label}
-                            className={`text-gray-500 dark:text-gray-400 transition-all duration-300 ${social.hoverColor} transform hover:scale-110`}
+                            className={`text-gray-500 transition-all duration-300 ${social.hoverColor} transform hover:scale-110`}
                         >
                             {social.icon}
                         </a>

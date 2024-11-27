@@ -22,12 +22,6 @@ export function TestimonialApp() {
                 </p>
             </Blockquote>
             <figcaption className="mt-6 flex items-center justify-center space-x-3">
-                {/* <Avatar
-                    rounded
-                    size="xs"
-                    img="/images/people/profile-picture-5.jpg"
-                    alt="profile picture"
-                /> */}
                 <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                     <cite className="pr-3 font-medium text-gray-900 dark:text-white">Paulo Costa</cite>
                     <cite className="pl-3 text-sm text-gray-500 dark:text-gray-400">CEO & Diretor de Criação</cite>

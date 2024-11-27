@@ -109,7 +109,7 @@ export function AboutUs(): JSX.Element {
     };
 
     return (
-        <section className="h-[calc(100vh-5rem)] bg-gradient-to-b from-white to-gray-50 py-16 flex items-center overflow-hidden">
+        <section className="min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)] bg-gradient-to-b from-white to-gray-50 py-16">
             <motion.div
                 ref={ref}
                 initial="hidden"

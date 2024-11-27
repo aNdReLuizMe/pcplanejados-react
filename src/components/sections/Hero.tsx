@@ -1,13 +1,12 @@
 "use client";
 
-import { MouseScroll } from "../common/MouseScroll";
 import { CarouselApp } from "./Carousel";
 import { TestimonialApp } from "./Testimonial";
 
 
 export function Hero(): JSX.Element {
     return (
-        <section id="home" className="relative w-full h-[calc(100vh)]">
+        <section id="home" className="relative w-full min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)]">
             <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
                 <div className="w-full h-full bg-gray-800">
                     <CarouselApp />
@@ -18,7 +17,6 @@ export function Hero(): JSX.Element {
                     </div>
                 </div>
             </div>
-            <MouseScroll />
         </section>
     );
 }
