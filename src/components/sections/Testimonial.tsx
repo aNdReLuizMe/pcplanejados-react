@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar, Blockquote } from "flowbite-react";
+import { Blockquote } from "flowbite-react";
 
 export function TestimonialApp() {
     return (
@@ -18,22 +18,21 @@ export function TestimonialApp() {
             </div>
             <Blockquote className="mx-auto">
                 <p className="text-2xl font-medium italic text-gray-900 dark:text-white">
-                    "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to
-                    complex dashboard. Perfect choice for your next SaaS application."
+                    "Desenvolvemos soluções personalizadas em móveis planejados para qualquer tipo de ambiente. Basta compartilhar sua visão conosco, e transformaremos seu desejo em realidade."
                 </p>
             </Blockquote>
             <figcaption className="mt-6 flex items-center justify-center space-x-3">
-                <Avatar
+                {/* <Avatar
                     rounded
                     size="xs"
                     img="/images/people/profile-picture-5.jpg"
                     alt="profile picture"
-                />
+                /> */}
                 <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                    <cite className="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</cite>
-                    <cite className="pl-3 text-sm text-gray-500 dark:text-gray-400">CEO at Google</cite>
+                    <cite className="pr-3 font-medium text-gray-900 dark:text-white">Paulo Costa</cite>
+                    <cite className="pl-3 text-sm text-gray-500 dark:text-gray-400">CEO & Diretor de Criação</cite>
                 </div>
             </figcaption>
-        </figure>
+        </figure >
     );
 }
