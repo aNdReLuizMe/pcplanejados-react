@@ -7,7 +7,7 @@ import { TestimonialApp } from "./Testimonial";
 
 export function Hero(): JSX.Element {
     return (
-        <section id="home" className="relative w-full h-[calc(100vh-64px)]">
+        <section id="home" className="relative w-full h-[calc(100vh)]">
             <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
                 <div className="w-full h-full bg-gray-800">
                     <CarouselApp />
