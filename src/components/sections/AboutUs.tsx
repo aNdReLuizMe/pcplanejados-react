@@ -132,13 +132,13 @@ export function AboutUs(): JSX.Element {
                             Nossa História
                         </h3>
                         <p className="text-gray-600 leading-relaxed text-justify">
-                            Desde 2004, nós da Paulo Costa Planejados temos nos dedicado à arte da marcenaria,
+                            Desde 2020, nós da Paulo Costa Planejados temos nos dedicado à arte da marcenaria,
                             transformando madeira em obras-primas funcionais. Nossa jornada começou
                             em uma pequena oficina, onde o compromisso com a qualidade e a atenção
                             aos detalhes já eram nossa marca registrada.
                         </p>
                         <p className="text-gray-600 leading-relaxed text-justify">
-                            Com duas décadas de experiência, desenvolvemos um profundo entendimento
+                            No campo da marcenaria já possuímos duas décadas de experiência, onde desenvolvemos um profundo entendimento
                             das necessidades de nossos clientes, combinando técnicas tradicionais
                             com tecnologia de ponta para criar móveis que são verdadeiras obras de arte.
                         </p>

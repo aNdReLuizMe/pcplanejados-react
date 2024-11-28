@@ -130,7 +130,7 @@ export const Location: FC = () => {
                         {/* Botão CTA */}
                         <div className="pt-6">
                             <a
-                                href="https://wa.me/5567992828187"
+                                href="https://wa.me/5567991146889"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 hover:shadow-lg"
