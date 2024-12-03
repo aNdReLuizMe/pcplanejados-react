@@ -36,7 +36,7 @@ export function AboutUs(): JSX.Element {
     };
 
     return (
-        <section className="min-h-screen py-16 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+        <section className="min-h-screen lg:py-24 bg-gradient-to-b from-white to-gray-50">
             <motion.div
                 ref={ref}
                 initial="hidden"

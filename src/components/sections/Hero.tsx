@@ -40,14 +40,14 @@ export function Hero(): JSX.Element {
     return (
         <section
             id="home"
-            className="w-full mt-20 h-[calc(100vh-5rem)]"
+            className="w-full h-[calc(100vh-80px)]" // Mudança aqui
         >
             <motion.div
                 ref={ref}
                 initial="hidden"
                 animate={controls}
                 variants={containerVariants}
-                className="grid grid-cols-1 lg:grid-cols-2 h-full"
+                className="grid grid-cols-1 lg:grid-cols-2 h-[calc(100vh-80px)]" // E aqui
             >
                 {/* Carrossel */}
                 <motion.div

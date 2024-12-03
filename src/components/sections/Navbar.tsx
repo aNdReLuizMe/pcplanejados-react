@@ -13,10 +13,14 @@ export function NavbarApp(): JSX.Element {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         setActiveSection(entry.target.id);
+                        window.history.replaceState(null, '', `#${entry.target.id}`);
                     }
                 });
             },
-            { threshold: 0.5 }
+            {
+                threshold: 0.5,
+                rootMargin: '-80px 0px 0px 0px'
+            }
         );
 
         document.querySelectorAll('section[id]').forEach((section) => {
@@ -27,19 +31,20 @@ export function NavbarApp(): JSX.Element {
     }, []);
 
     const scrollToSection = (sectionId: string): void => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            const navbarHeight = 80; // 5rem = 80px
-            const targetPosition = element.offsetTop - navbarHeight;
+        const section = document.getElementById(sectionId);
+        if (section) {
+            const navbarHeight = 80;
+            const targetPosition = section.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
             window.scrollTo({
-                top: sectionId === 'home' ? 0 : targetPosition,
+                top: targetPosition,
                 behavior: 'smooth'
             });
         }
     };
 
     return (
-        <Navbar className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
+        <Navbar className="fixed top-0 left-0 right-0 z-50 h-20 bg-white/95 backdrop-blur-sm shadow-lg">
             <div className="container mx-auto flex flex-wrap items-center justify-between">
                 <Navbar.Brand href="/">
                     <img

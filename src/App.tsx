@@ -23,22 +23,22 @@ function App(): JSX.Element {
 
             <div className='flex flex-col min-h-screen'>
                 <NavbarApp />
-                <main className='flex-grow'> {/* mt-20 compensa altura do navbar */}
+                <main className='flex-grow main-container'> {/* mt-20 compensa altura do navbar */}
                     <div className='mt-20'>
                         <Hero />
                     </div>
                     <section id="about" aria-label="Sobre nós">
-                        <div className='pt-24'>
+                        <div className='mt-0'>
                             <AboutUs />
                         </div>
                     </section>
                     <section id="portfolio" aria-label="Portfólio">
-                        <div className='pt-24'>
+                        <div className='mt-0'>
                             <Portfolio />
                         </div>
                     </section>
                     <section id="location" aria-label="Localização">
-                        <div className=''>
+                        <div className='mt-0'>
                             <Location />
                         </div>
                     </section>
