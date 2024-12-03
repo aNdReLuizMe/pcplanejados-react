@@ -32,6 +32,9 @@ export const Footer: FC = () => {
                 <div className="text-sm text-gray-500 text-center sm:text-left mb-2 sm:mb-0">
                     <p>&copy; {currentYear} Paulo Costa Planejados.</p>
                 </div>
+                <div className="text-sm text-gray-500 text-center sm:text-left mb-2 sm:mb-0">
+                    <p>MediaN</p>
+                </div>
                 <div className="flex items-center space-x-6">
                     {socialLinks.map((social, index) => (
                         <a

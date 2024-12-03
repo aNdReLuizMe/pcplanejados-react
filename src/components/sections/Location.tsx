@@ -48,7 +48,7 @@ export const Location: FC = () => {
     );
 
     return (
-        <section className="min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)] bg-white">
+        <section className="min-h-[calc(100vh)] lg:h-[calc(100vh)] bg-white">
             <motion.div
                 ref={ref}
                 initial="hidden"
@@ -68,7 +68,7 @@ export const Location: FC = () => {
                         allowFullScreen={true}
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        className="w-full h-full"
+                        className="flex items-center justify-center p-8 lg:p-16 bg-gray-50"
                     />
                 </motion.div>
 
