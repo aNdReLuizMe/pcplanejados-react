@@ -19,8 +19,7 @@ import Image40 from "../../assets/images/carousel/Image (40).jpeg";
 import Image46 from "../../assets/images/carousel/Image (46).jpeg";
 import Image51 from "../../assets/images/carousel/Image (51).jpeg";
 import Image54 from "../../assets/images/carousel/Image (54).jpeg";
-import Image61 from "../../assets/images/carousel/Image (61).jpeg";
-// Adicione mais imagens conforme necessário
+import Image61 from "../../assets/images/carousel/Image (61).jpeg";// Adicione mais imagens conforme necessário
 
 export function Portfolio(): JSX.Element {
     const images = [
@@ -35,7 +34,7 @@ export function Portfolio(): JSX.Element {
     ];
 
     return (
-        <section className="h-[calc(100vh-5rem)] bg-white py-16 flex flex-col items-center overflow-hidden">
+        <section className="h-[calc(100vh-5rem)] bg-gradient-to-b from-white to-gray-50 py-16 flex items-center overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">
